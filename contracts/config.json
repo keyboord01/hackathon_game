@@ -1,4 +1,13 @@
 {
   "version": 1,
-  "deployAliases": {}
+  "deployAliases": {
+    "testhack": {
+      "url": "https://proxy.berkeley.minaexplorer.com/graphql",
+      "keyPath": "keys/testhack.json",
+      "feepayerKeyPath": "/Users/ahmedziad/.cache/zkapp-cli/keys/keyboord01.json",
+      "feepayerAlias": "keyboord01",
+      "fee": "0.1",
+      "smartContract": "Add"
+    }
+  }
 }
