@@ -19,14 +19,14 @@ export default function Game() {
       <div className="flex lg:flex-row gap-4 flex-col bg ">
         <div
           onClick={handleRockPepperScissorsClick}
-          className="bg-orange-400 bg-opacity-50 hover:bg-opacity-100 cursor-pointer w-[300px] h-[300px] flex items-center justify-center"
+          className="bg-red-400 bg-opacity-20 rounded-lg hover:bg-opacity-100 cursor-pointer w-[300px] h-[300px] flex items-center justify-center"
         >
           Rock Paper Scissors
         </div>
-        <div className="bg-orange-400 bg-opacity-50 hover:bg-opacity-100 cursor-pointer w-[300px] h-[300px] flex items-center justify-center">
+        <div className="bg-red-400 bg-opacity-20 rounded-lg hover:bg-opacity-100 cursor-pointer w-[300px] h-[300px] flex items-center justify-center">
           game 2
         </div>
-        <div className="bg-orange-400 bg-opacity-50 hover:bg-opacity-100 cursor-pointer w-[300px] h-[300px] flex items-center justify-center">
+        <div className="bg-red-400 bg-opacity-20 rounded-lg hover:bg-opacity-100 cursor-pointer w-[300px] h-[300px] flex items-center justify-center">
           game 3
         </div>
       </div>
