@@ -2,11 +2,11 @@ import GameSelection from "./GameSelection";
 
 export default function Main() {
   return (
-    <div className=" h-[90%] min-w-full flex justify-around flex-col items-center relative">
-      <div className="absolute top-0">
+    <div className=" min-h-[100%] min-w-full flex justify-top mt-44 flex-col items-center gap-44 ">
+      <div className="">
         <p className="text-3xl">#1 MOST TRUSTED PLACE TO FLIP</p>
       </div>
-      <div className="">
+      <div className="z-10 ">
         <GameSelection />
       </div>
     </div>

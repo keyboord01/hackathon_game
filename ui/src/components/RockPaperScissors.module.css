@@ -1,0 +1,62 @@
+.gameContainer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.buttonGroup button {
+  margin: 20px;
+  padding: 30px 60px;
+  font-size: 36px; /* Larger font size */
+  cursor: pointer;
+  border: 2px solid #ddd; /* Added border */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #f8f8f8; /* Light background */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.buttonGroup button:hover {
+  background-color: #e0e0e0; /* Change color on hover */
+  border-color: #ccc;
+}
+
+.choiceButtons button {
+  margin: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.choiceButtons img {
+  width: 240px; /* Doubled size */
+  height: auto;
+}
+
+.result {
+  font-size: 56px; /* Doubled size */
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.9); /* More opaque background */
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+
+.betGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 10px; /* Space between buttons */
+  margin-bottom: 20px;
+}
+
+.winAnimation {
+  animation: winAnimation 1.5s ease infinite;
+}
+
+@keyframes winAnimation {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  } /* Slightly larger scale for animation */
+}

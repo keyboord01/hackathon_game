@@ -9,14 +9,20 @@ import Navbar from "../components/Navbar";
 import Main from "../components/Main";
 import ConnectWallet from "../components/ConnectWallet";
 import useAccount from "@/state/useAccount";
+import CoinFlipGame from "@/components/FlipACoin.jsx";
 
 export default function Home() {
   const { account } = useAccount();
+  const [balance, setBalance] = useState(100); // Starting balance in MINA
+
+  // Define a function to update the balance
+  const updateBalance = (newBalance) => {
+    setBalance(newBalance);
+  };
 
   useEffect(() => {
     (async () => {
       const { Mina, PublicKey } = await import("o1js");
-      const { Add } = await import("../../../contracts/build/src/");
 
       // Update this to use the address (public key) for your zkApp account.
       // To try it out, you can try this address for an example "Add" smart contract that we've deployed to
@@ -35,8 +41,8 @@ export default function Home() {
   if (account) {
     return (
       <GradientBG>
-        <div className="bg-yellow-100 bg-opacity-40 overflow-x-hidden">
-          <Navbar />
+        <div className="min-h-full bg-yellow-100 bg-opacity-40 overflow-x-hidden">
+          <Navbar balance={balance} />
           <div className="w-screen h-screen  flex items-center justify-center">
             <Main />
           </div>
@@ -47,7 +53,7 @@ export default function Home() {
   return (
     <GradientBG>
       <div className="bg-yellow-100 bg-opacity-40 overflow-x-hidden h-full">
-        <Navbar />
+        <Navbar balance={balance} />
         <div className="w-screen h-screen  flex items-center justify-center">
           <ConnectWallet />
         </div>

@@ -6,17 +6,11 @@ export default function Navbar() {
       </div>
       <div>
         <div className="flex flex-row gap-2">
-          <button className="border-2 border-black px-4 py-2 rounded-sm hover:-translate-x-[2px] hover:translate-y-[2px] cursor-pointer">
-            BUTTON
-          </button>
-          <button className="border-2 border-black px-4 py-2 rounded-sm hover:-translate-x-[2px] hover:translate-y-[2px] cursor-pointer">
-            BUTTON
-          </button>{" "}
-          <button className="border-2 border-black px-4 py-2 rounded-sm hover:-translate-x-[2px] hover:translate-y-[2px] cursor-pointer">
-            BUTTON
-          </button>
-          <button className="border-2 border-black px-4 py-2 rounded-sm hover:-translate-x-[2px] hover:translate-y-[2px] cursor-pointer">
-            BUTTON
+          <button
+            onClick={() => (window.location.href = "/")}
+            className="border-2 border-black px-4 py-2 rounded-sm hover:-translate-x-[2px] hover:translate-y-[2px] cursor-pointer"
+          >
+            Home
           </button>
         </div>
       </div>

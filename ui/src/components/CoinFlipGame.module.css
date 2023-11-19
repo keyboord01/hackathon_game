@@ -1,0 +1,117 @@
+.container {
+  text-align: center;
+  margin-top: 40px;
+  color: #333;
+  background-color: hsla(0, 0%, 96%, 0.306);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.betGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.betAmountButton {
+  padding: 10px 15px;
+  background-color: #ffffff48;
+  border: 2px solid #49391568;
+  border-radius: 5px;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.selectedBetAmount {
+  background-color: #433800; /* Selected background color */
+  color: #ffffff;
+}
+
+.betAmountButton:hover {
+  background-color: #433800;
+  color: #ffffff;
+}
+
+.choiceButtons {
+  margin: 20px 0;
+}
+
+.betButton {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #ffffff48;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.betButton:hover {
+  background-color: #433800;
+  color: #ffffff;
+}
+.selectedBetButton {
+  background-color: #433800; /* Selected background color */
+  color: #ffffff;
+}
+
+.flipButton {
+  padding: 12px 25px;
+  background-color: #ffc107;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.flipButton:hover {
+  background-color: #e0a800;
+}
+
+.resultText {
+  margin-top: 20px;
+
+  font-size: 26x; /* Doubled size */
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.9); /* More opaque background */
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+
+.coinImage {
+  max-width: 200px;
+  height: auto;
+}
+
+.loading-spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #007bff;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.greenText {
+  color: green;
+}
+
+.redText {
+  color: red;
+}

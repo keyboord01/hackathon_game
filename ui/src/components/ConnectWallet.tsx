@@ -15,7 +15,7 @@ export default function ConnectWallet() {
         className="absolute translate-y-64 opacity-60 rotate-180    scale-95 grayscale z-[-1] blur-sm "
       />
       <div className="flex flex-col items-center justify-center gap-8">
-        <p className="text-3xl text-yellow-900">
+        <p className="text-3xl text-yellow-900 text-center">
           Connect your wallet to get started!
         </p>
         <button
