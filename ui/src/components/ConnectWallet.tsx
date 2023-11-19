@@ -5,9 +5,7 @@ export default function ConnectWallet() {
 
   return (
     <div className="h-[90%] min-w-full flex justify-top flex-col items-center relative gap-32">
-      <div className=" ">
-        <p className="text-3xl text-yellow-900">1#</p>
-      </div>
+      <div className=" "></div>
       <img src="./assets/coinflip.gif" alt="gif" />
       <img
         src="./assets/coinflip.gif"
